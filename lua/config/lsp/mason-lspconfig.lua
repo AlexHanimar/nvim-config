@@ -88,3 +88,12 @@ for _, server in pairs(lsp_list) do
 		vim.lsp.config[server] = default_setup
 	end
 end
+
+-- custom servers
+vim.lsp.config["qmlls"] = {
+	cmd = { "qmlls6" },
+	filetypes = { "qml", "qmljs" },
+	root_markers = { ".git", "shell.qml" },
+	single_file_support = true,
+}
+vim.lsp.enable("qmlls")

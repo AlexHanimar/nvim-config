@@ -2,6 +2,9 @@ return {
 	{
 		"norcalli/nvim-colorizer.lua",
 		config = function()
+			if vim.fn.has("gui_running") == 0 then
+				return
+			end
 			require("colorizer").setup(
 				{ "*", },
 				{

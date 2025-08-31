@@ -1,12 +1,13 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
 	build = ":TSUpdate",
+	lazy = false,
 	config = function()
 		require("nvim-treesitter")
 		local treesitter_configs = require("nvim-treesitter.configs")
 
 		---@diagnostic disable: missing-fields
-		treesitter_configs.setup{
+		treesitter_configs.setup {
 			ensure_installed = {
 				"c",
 				"lua",
@@ -23,6 +24,7 @@ return {
 				"markdown_inline",
 				"regex",
 				"hyprlang",
+				"qmljs",
 			},
 			sync_install = false,
 			ignore_install = {},

@@ -31,9 +31,11 @@ return {
 					}
 				end,
 			}
-			vim.cmd("colorscheme catppuccin-mocha")
+			if vim.o.termguicolors then
+				vim.cmd("colorscheme catppuccin-mocha")
+			end
 			-- vim.cmd("colorscheme catppuccin-latte")
 		end,
-		enabled = true,
+		enabled = false,
 	},
 }

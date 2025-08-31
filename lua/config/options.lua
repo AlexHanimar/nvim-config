@@ -1,6 +1,5 @@
 -- python packages
 vim.g.python3_host_prog=vim.fn.expand("/home/p1an1st/.virtualenvs/neovim/bin/python3")
--- vim.g.python_host_prog=vim.fn.expand("/home/p1an1st/.virtualenvs/neovim/bin/python")
 
 -- leader
 vim.g.mapleader = " "
@@ -36,9 +35,12 @@ vim.o.showtabline = 2
 vim.o.clipboard = "unnamedplus"
 
 -- truecolor
-if vim.env.COLORTERM ~= nil then
-	vim.o.termguicolors = true
-end
+-- vim.o.termguicolors = false
+-- if vim.fn.has("gui_running") == 1 then
+-- 	vim.o.termguicolors = true
+-- elseif vim.fn.empty("$DISPLAY") == 0 then
+-- 	vim.o.termguicolors = true
+-- end
 
 -- filetypes
 vim.filetype.add{

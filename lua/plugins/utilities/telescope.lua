@@ -38,7 +38,7 @@ return {
 				-- defaults = require("telescope.themes").get_dropdown(),
 			}
 
-			telescope.load_extension("fzf")
+			-- telescope.load_extension("fzf")
 			telescope.load_extension("noice")
 			telescope.load_extension("scope")
 			telescope.load_extension("telescope-tabs")
