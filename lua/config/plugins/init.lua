@@ -1,0 +1,6 @@
+require("config.plugins.fidget")
+require("config.plugins.mason")
+require("config.plugins.mini")
+require("config.plugins.treesitter")
+require("config.plugins.nvim-tree")
+require("config.plugins.oil")
